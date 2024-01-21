@@ -65,13 +65,13 @@ export default function Portfolio({ portfolioWithBlur }: PortfolioProps) {
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        My Recent Work
+        Meus últimos trabalhos
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl font-semibold pt-1'
+        className='text-center text-3xl font-semibold pt-1'
       >
-        Portfolio
+        Projetos
       </motion.h2>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-8'>
         {portfolios.map((portfolio, index) => (
@@ -88,7 +88,7 @@ export default function Portfolio({ portfolioWithBlur }: PortfolioProps) {
             {!loading && (
               <>
                 <CopyPlus className='w-4 h-4 mr-2' />
-                Show More
+                Mostre mais
               </>
             )}
             {loading && (

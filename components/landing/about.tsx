@@ -9,6 +9,7 @@ import { Briefcase, FolderGit2, Laptop } from 'lucide-react';
 import type getData from '@/actions/get-data';
 import { Button } from '@/components/ui/button';
 import tilted from '@/public/web-developer-tilted.webp';
+import profile from '@/public/foto de perfil.jpeg';
 import {
   slideInFromLeft,
   slideInFromRight,
@@ -33,21 +34,21 @@ export default function About({ about }: AboutProps) {
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        Get To Know
+        Apresentação Pessoal
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl font-semibold pt-1'
+        className='text-center text-3xl font-semibold pt-1'
       >
-        About Me
+        Sobre Mim
       </motion.h2>
       <div className='w-full grid lg:grid-cols-7 gap-12 md:gap-24 2xl:gap-48 pt-12'>
         <motion.div
           variants={slideInFromLeft(0.3)}
           className='lg:col-span-3 w-4/5 md:w-1/2 mx-auto lg:w-full aspect-square rounded-2xl bg-gradient-to-tr from-transparent via-primary to-transparent'
         >
-          <div className='rounded-2xl overflow-hidden rotate-[10deg] transition duration-300 ease-in-out hover:rotate-0 relative'>
-            <Image src={tilted} alt='about' priority />
+          <div className='rounded-2xl overflow-hidden rotate-[8deg] transition duration-300 ease-in-out hover:rotate-0 relative'>
+            <Image src={profile} alt='about' priority />
           </div>
         </motion.div>
         <div className='lg:col-span-4 flex flex-col gap-8'>
@@ -58,7 +59,7 @@ export default function About({ about }: AboutProps) {
             >
               <Briefcase className='w-6 h-6 text-primary-foreground group-hover:text-primary mb-4' />
               <h3 className='text-base text-primary-foreground group-hover:text-primary pb-2'>
-                Experience
+                Experiência
               </h3>
               <small className='text-xs text-center font-normal text-muted/60 group-hover:text-primary/80'>
                 {about?.experience}
@@ -70,7 +71,7 @@ export default function About({ about }: AboutProps) {
             >
               <FolderGit2 className='w-6 h-6 text-primary-foreground group-hover:text-primary mb-4' />
               <h3 className='text-base text-primary-foreground group-hover:text-primary pb-2'>
-                Projects
+                Projetos
               </h3>
               <small className='text-xs text-center font-normal text-muted/60 group-hover:text-primary/80'>
                 {about?.project}
@@ -82,7 +83,7 @@ export default function About({ about }: AboutProps) {
             >
               <Laptop className='w-6 h-6 text-primary-foreground group-hover:text-primary mb-4' />
               <h3 className='text-base text-primary-foreground group-hover:text-primary pb-2'>
-                Worlwide
+                Disponibilidade
               </h3>
               <small className='text-xs text-center font-normal text-muted/60 group-hover:text-primary/80'>
                 {about?.worldwide}

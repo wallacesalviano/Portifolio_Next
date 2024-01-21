@@ -32,23 +32,23 @@ export default function Experience({ frontend, backend }: ExperienceProps) {
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        What Skills I have
+        Conhecimentos técnicos
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl pt-1 font-semibold'
+        className='text-center text-3xl pt-1 font-semibold'
       >
-        Technical Level
+        Habilidades
       </motion.h2>
-      <div className='grid lg:grid-cols-2 gap-8 pt-8'>
+      <div className='flex items-center pt-8'>
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className='w-full rounded-2xl flex flex-col items-center bg-primary group hover:bg-primary-foreground transition-colors duration-300 ease-in-out border border-primary py-9 px-6 md:py-9 md:px-20'
+          className='w-full rounded-2xl flex flex-col items-center bg-primary group hover:bg-primary-foreground transition-colors duration-300 ease-in-out border border-primary py-9 px-6 md:py-9 md:px-28'
         >
           <h3 className='text-lg md:text-xl text-primary-foreground group-hover:text-primary pb-8'>
             Frontend Development
           </h3>
-          <div className='w-full grid grid-cols-2 gap-y-4'>
+          <div className='w-full md:grid md:grid-cols-3 grid grid-cols-2 gap-y-4'>
             {frontend.map(({ skill, level }, index) => (
               <article
                 key={index}
@@ -65,7 +65,7 @@ export default function Experience({ frontend, backend }: ExperienceProps) {
             ))}
           </div>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={slideInFromRight(0.5)}
           className='w-full rounded-2xl flex flex-col items-center bg-primary group hover:bg-primary-foreground transition-colors duration-300 ease-in-out border border-primary py-9 px-6 md:py-9 md:px-20'
         >
@@ -88,7 +88,7 @@ export default function Experience({ frontend, backend }: ExperienceProps) {
               </article>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.section>
   );

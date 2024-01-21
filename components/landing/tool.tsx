@@ -26,13 +26,13 @@ export default function Tool({ tool }: ToolProps) {
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        What I Use
+        O que eu Uso
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl font-semibold pt-1'
+        className='text-center text-3xl font-semibold pt-1'
       >
-        Tools & Apps
+        Ferramentas & Apps
       </motion.h2>
       <motion.div
         variants={slideInFromRight(0.5)}
@@ -46,8 +46,8 @@ export default function Tool({ tool }: ToolProps) {
                   <Image
                     src={item.image}
                     alt={item.name}
-                    width={56}
-                    height={56}
+                    width={58}
+                    height={58}
                     className={cn(
                       'w-12 h-12 md:w-14 md:h-14 grayscale-[20%]',
                       item.color === 'DARK' && 'dark:invert-[80%]'

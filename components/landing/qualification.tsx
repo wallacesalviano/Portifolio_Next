@@ -33,13 +33,13 @@ export default function Qualification({
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        My Personal Journey
+        Minha jornada pessoal
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl font-semibold pt-1'
+        className='text-center text-3xl font-semibold pt-1'
       >
-        Qualification
+        Qualificações
       </motion.h2>
       <motion.div
         variants={slideInFromRight(0.5)}
@@ -47,8 +47,8 @@ export default function Qualification({
       >
         <Tabs defaultValue='education' className='w-full'>
           <TabsList className='grid w-full grid-cols-2'>
-            <TabsTrigger value='education'>Education</TabsTrigger>
-            <TabsTrigger value='experience'>Experience</TabsTrigger>
+            <TabsTrigger value='education'>Educação</TabsTrigger>
+            <TabsTrigger value='experience'>Experiência</TabsTrigger>
           </TabsList>
           <TabsContent value='education'>
             <QualificationCard

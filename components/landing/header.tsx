@@ -8,7 +8,7 @@ import { MessageCircle, Facebook, Linkedin, Github } from 'lucide-react';
 
 import type getData from '@/actions/get-data';
 import { Button } from '@/components/ui/button';
-import profile from '@/public/web-developer.webp';
+import profile from '@/public/foto de perfil.jpeg';
 import {
   fadeIn,
   slideInFromLeft,
@@ -36,7 +36,7 @@ export default function Header({ miscellaneous }: HeaderProps) {
           variants={slideInFromTop(0)}
           className='text-sm text-muted-foreground font-medium'
         >
-          Hello, I am
+          Olá, me chamo
         </motion.h1>
         <motion.div
           variants={slideInFromTop(0.1)}
@@ -44,7 +44,7 @@ export default function Header({ miscellaneous }: HeaderProps) {
         >
           <Link href='/' scroll={false}>
             <h2 className='text-3xl xs:text-4xl sm:text-[2.5rem] font-medium leading-7 py-4'>
-              Mohamad Salimi
+              Wallace Salviano
             </h2>
           </Link>
         </motion.div>

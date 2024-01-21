@@ -33,7 +33,7 @@ export default function Footer({ miscellaneous }: FooterProps) {
             className='text-primary-foreground text-4xl font-medium uppercase'
             asChild
           >
-            <Link href='#home'>Salimi</Link>
+            <Link href='#home'>Wallace</Link>
           </Button>
         </motion.div>
         <motion.ul
@@ -47,12 +47,12 @@ export default function Footer({ miscellaneous }: FooterProps) {
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#about'>About</Link>
+              <Link href='#about'>Sobre Mim</Link>
             </Button>
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#experience'>Experience</Link>
+              <Link href='#experience'>Experiência</Link>
             </Button>
           </li>
           <li>
@@ -62,22 +62,22 @@ export default function Footer({ miscellaneous }: FooterProps) {
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#qualification'>Qualification</Link>
+              <Link href='#qualification'>Qualificações</Link>
             </Button>
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#portfolio'>Portfolio</Link>
+              <Link href='#portfolio'>Projetos</Link>
             </Button>
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#tool'>Tool</Link>
+              <Link href='#tool'>Ferramentas</Link>
             </Button>
           </li>
           <li>
             <Button variant='ghost' className='text-primary-foreground' asChild>
-              <Link href='#contact'>Contact</Link>
+              <Link href='#contact'>Contato</Link>
             </Button>
           </li>
         </motion.ul>
@@ -138,7 +138,7 @@ export default function Footer({ miscellaneous }: FooterProps) {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                Salimi
+                Wallace Salviano
               </Link>
             </Button>
             &copy; {new Date().getFullYear()}.

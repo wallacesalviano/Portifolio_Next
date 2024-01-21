@@ -17,18 +17,18 @@ export const metadata: Metadata = {
       ? `https://${process.env.VERCEL_URL}`
       : `http://localhost:${process.env.PORT || 3000}`
   ),
-  title: 'Salimi — My Digital Canvas',
+  title: 'Wallace — My Personal Profile',
   description:
     'Unveil my skills, projects, and journey on my personal website. A digital portfolio reflecting my passion and expertise. Explore now and do contact me.',
   openGraph: {
     url: '/',
-    title: 'Salimi — My Digital Canvas',
+    title: 'Wallace — My Personal Profile',
     description:
       'Unveil my skills, projects, and journey on my personal website. A digital portfolio reflecting my passion and expertise. Explore now and do contact me.'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Salimi — My Digital Canvas',
+    title: 'Wallace — My Personal Profile',
     description:
       'Unveil my skills, projects, and journey on my personal website. A digital portfolio reflecting my passion and expertise. Explore now and do contact me.'
   }

@@ -36,11 +36,11 @@ export default async function Home() {
         <Header miscellaneous={miscellaneous} />
         <About about={about} />
         <Experience frontend={frontend} backend={backend} />
-        <Expertise
+        {/* <Expertise
           seooptimization={seooptimization}
           webdevelopment={webdevelopment}
           contentcreation={contentcreation}
-        />
+        /> */}
         <Qualification education={education} experience={experience} />
         <Portfolio portfolioWithBlur={portfolioWithBlur} />
         <Tool tool={tool} />

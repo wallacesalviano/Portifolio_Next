@@ -21,10 +21,10 @@ import {
 } from '@/components/ui/form';
 
 const formSchema = z.object({
-  name: z.string().min(1, { message: 'Please enter your name.' }),
-  email: z.string().email({ message: 'Please enter valid email address.' }),
-  subject: z.string().min(1, { message: 'Please enter subject.' }),
-  message: z.string().min(1, { message: 'Please enter your message.' })
+  name: z.string().min(1, { message: 'Por favor, entre com seu nome.' }),
+  email: z.string().email({ message: 'Por favor, entre com um e-mail válido.' }),
+  subject: z.string().min(1, { message: 'Por favor, escreva um assunto.' }),
+  message: z.string().min(1, { message: 'Por favor, escreva uma mensagem.' })
 });
 
 export default function ContactForm() {
@@ -80,10 +80,10 @@ export default function ContactForm() {
           name='name'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='text-base'>Name</FormLabel>
+              <FormLabel className='text-base'>Nome</FormLabel>
               <FormControl>
                 <Input
-                  placeholder='Enter your name'
+                  placeholder='Digite seu nome'
                   {...field}
                   autoComplete='name'
                 />
@@ -100,7 +100,7 @@ export default function ContactForm() {
               <FormLabel className='text-base'>Email</FormLabel>
               <FormControl>
                 <Input
-                  placeholder='Enter your email'
+                  placeholder='Digite seu email'
                   {...field}
                   autoComplete='email'
                 />
@@ -114,9 +114,9 @@ export default function ContactForm() {
           name='subject'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='text-base'>Subject</FormLabel>
+              <FormLabel className='text-base'>Assunto</FormLabel>
               <FormControl>
-                <Input placeholder='Enter subject' {...field} />
+                <Input placeholder='Digite o assunto' {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -127,11 +127,11 @@ export default function ContactForm() {
           name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className='text-base'>Message</FormLabel>
+              <FormLabel className='text-base'>Mensagem</FormLabel>
               <FormControl>
                 <Textarea
                   rows={5}
-                  placeholder='Enter your message'
+                  placeholder='Digite uma mensagem '
                   className='resize-none'
                   {...field}
                 />
@@ -150,10 +150,10 @@ export default function ContactForm() {
             {loading && (
               <>
                 <Loader2 className='animate-spin mr-2' size={18} />
-                Sending...
+                Enviando...
               </>
             )}
-            {!loading && <>Send Message</>}
+            {!loading && <>Enviar</>}
           </Button>
         </div>
       </form>

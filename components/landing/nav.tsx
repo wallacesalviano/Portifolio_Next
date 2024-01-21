@@ -35,38 +35,38 @@ export default function Nav() {
           }
         />
         <NavButton
-          name='About'
+          name='Sobre Mim'
           anchor='#about'
           icon={User}
           active={currentAnchor === '#about' ? true : false}
         />
         <NavButton
-          name='Experience'
+          name='Experiencia'
           anchor='#experience'
           icon={Book}
           active={currentAnchor === '#experience' ? true : false}
         />
-        <NavButton
+        {/* <NavButton
           name='Expertise'
           anchor='#expertise'
           icon={ClipboardCheck}
           active={currentAnchor === '#expertise' ? true : false}
           hideMobile
-        />
+        /> */}
         <NavButton
-          name='Qualification'
+          name='Qualificações'
           anchor='#qualification'
           icon={GraduationCap}
           active={currentAnchor === '#qualification' ? true : false}
         />
         <NavButton
-          name='Portfolio'
+          name='Projetos'
           anchor='#portfolio'
           icon={FolderGit2}
           active={currentAnchor === '#portfolio' ? true : false}
         />
         <NavButton
-          name='Contact'
+          name='Contato'
           anchor='#contact'
           icon={MessageCircle}
           active={currentAnchor === '#contact' ? true : false}

@@ -32,13 +32,13 @@ export default function Contact({ miscellaneous }: ContactProps) {
         variants={slideInFromTop(0.3)}
         className='text-center text-sm text-muted-foreground font-medium'
       >
-        Get in Touch
+        Me mande uma mensagem!
       </motion.h1>
       <motion.h2
         variants={slideInFromTop(0.4)}
-        className='text-center text-2xl font-semibold pt-1'
+        className='text-center text-3xl font-semibold pt-1'
       >
-        Contact Me
+        Contato
       </motion.h2>
       <div className='w-full max-w-xl lg:max-w-6xl mx-auto grid lg:grid-cols-5 gap-16 pt-8'>
         <div className='lg:col-span-2 flex flex-col gap-6'>
@@ -62,7 +62,7 @@ export default function Contact({ miscellaneous }: ContactProps) {
                     miscellaneous ? 'mailto:' + miscellaneous.email : '#'
                   }`}
                 >
-                  Email me
+                  Envie-me um Email
                 </Link>
               </Button>
             </div>
@@ -87,7 +87,7 @@ export default function Contact({ miscellaneous }: ContactProps) {
                   target='_blank'
                   rel='noopener noreferer'
                 >
-                  Say hello
+                  Diga um Oi
                 </Link>
               </Button>
             </div>
@@ -112,7 +112,7 @@ export default function Contact({ miscellaneous }: ContactProps) {
                   target='_blank'
                   rel='noopener noreferer'
                 >
-                  Let&apos;s chat
+                  Vamos conversar
                 </Link>
               </Button>
             </div>
